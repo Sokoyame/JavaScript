@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body><section class="body">
+    <center><h1>The Calculator</h1></center><hr>
+    <form> <center>
+        <p id="answer"></p>
+        <input type="number" id="input" class="input" placeholder="Enter first digit here:" >
+        <input type="number" id="input1" class="input" placeholder="Enter second digit here:" ><br><br>
+        <button type="button" onclick="addNumbers()" class="button">Addition</button>
+        <button type="button" onclick="subtractNumbers()" class="button">Subtraction</button>
+        <button type="button" onclick="multiplyNumbers()" class="button">Multiplication</button>
+        <button type="button" onclick="divideNumbers()" class="button">Division</button>
+    </center></form>
+    <style>
+        body{
+            background-color: #ccc;
+            margin: 0;
+            bottom: 1;
+        }
+        .button{
+            width: 200px;
+            height: 60px;
+            border-radius: 20px ;
+        }
+        input{
+            width: 200px;
+            height: 50px;
+            border-radius: 18px;
+        }
+        .color{
+            background-color:gray;
+            height: 100px;
+        
+        }
+        
+    </style><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
+    <section class="color"><center><p>©Yaseer Abubakar</p></center>
+        <center>2024</center>
+    </section>
+</body>
+</html>
+<script type="text/javascript">
+var Num1 = parseInt(document.getElementById("input").value);
+var Num2 = parseInt(document.getElementById("input1").value);
+    function addNumbers() {
+    var Num1 = parseInt(document.getElementById("input").value);
+    var Num2 = parseInt(document.getElementById("input1").value);
+        var result = Num1 + Num2;
+        document.getElementById("answer").innerHTML = result;
+    }
+    function subtractNumbers() {
+    var Num1 = parseInt(document.getElementById("input").value);
+    var Num2 = parseInt(document.getElementById("input1").value);©
+        var result = Num1 - Num2;
+        document.getElementById("answer").innerHTML = result
+    }
+    function multiplyNumbers() {
+        var Num1 = parseInt(document.getElementById("input").value);
+        var Num2 = parseInt(document.getElementById("input1").value);
+        var result = Num1 * Num2;
+        document.getElementById("answer").innerHTML = result
+    }
+    function divideNumbers () {
+        var Num1 = parseInt(document.getElementById("input").value);
+        var Num2 = parseInt(document.getElementById("input1").value);
+        var result = Num1 / Num2
+        document.getElementById("answer").innerHTML = result
+    }
+    
+
+
+
+
+
+
+
+
+</script>
